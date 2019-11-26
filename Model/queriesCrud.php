@@ -51,7 +51,9 @@ class queriesCrud
         );
         
         $result = $this->db_handle->runQuery($query, $paramType, $paramValue);
+       // print _r($result);
         return $result;
+       
     }
     
     function getAllUser() {
